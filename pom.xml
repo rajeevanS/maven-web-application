@@ -102,11 +102,11 @@
 	      <url>http://15.206.185.159:8081/repository/rajrelease/</url>
 	    </repository>
 	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>VK Technologies Snapshot Nexus Repository </name>
-	      <url>http://15.206.185.159:8081/repository/rajsnapshot/</url>
-	    </snapshotRepository>
+	   # <snapshotRepository>
+	   #   <id>nexus</id>
+	   #   <name>VK Technologies Snapshot Nexus Repository </name>
+	    #  <url>http://15.206.185.159:8081/repository/rajsnapshot/</url>
+	    #</snapshotRepository>
 	    
 	</distributionManagement>
 	

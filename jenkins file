@@ -1,0 +1,22 @@
+pipeline{
+    agent any
+    stages{
+        stage(git){
+            steps{
+                git credentialsId: 'GIT-Hub-Credential', url: 'https://github.com/rajeevanS/maven-web-application-1.git'
+            }
+        }
+         stage(build){
+            steps{
+                sh "mvn clean install"
+            }
+        }
+        stage(deplay){
+            steps{
+                sshagent(['ddd93ba4-da9c-4c02-b679-26a06c3f7ab5']) {
+                   sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/maven/target/maven-web-application.war ec2-user@13.232.158.29:/opt/tomcat/apache-tomcat-9.0.56/webapps"
+            }
+        }
+    }
+}
+}

@@ -105,7 +105,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>VK Technologies Snapshot Nexus Repository </name>
-	      <url>http://18.117.129.131:8081/repository/maven-snapshots/</url>
+	      <url>http://13.233.110.197:8081/repository/simple-add-release//</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
